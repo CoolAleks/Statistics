@@ -57,13 +57,13 @@ public class StatsService {
 
     public long BelowAvgSales(long[] sales) {
         long avg= avg(sales);
-        int BelowAvg=0;
+        int belowAvg=0;
         for (long sale : sales){
             if (sale<avg){
-                BelowAvg++;
+                belowAvg++;
             }
         }
-        return BelowAvg;
+        return belowAvg;
     }
 
 
@@ -72,13 +72,13 @@ public class StatsService {
 
     public long AboveAvgSales(long[] sales) {
         long avg= avg(sales);
-        int AboveAvg=0;
+        int aboveAvg=0;
         for (long sale : sales){
             if (sale>avg){
-                AboveAvg++;
+                aboveAvg++;
             }
         }
-        return AboveAvg;
+        return aboveAvg;
     }
 
 }
